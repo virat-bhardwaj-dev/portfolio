@@ -3560,3 +3560,21 @@ button:focus-visible {
         min-width: 120px;
     }
 }
+
+/* =========================================================
+   MOBILE VIEWPORT STABILITY
+   Layout/design intentionally unchanged.
+========================================================= */
+@media (max-width: 768px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        overflow-x: hidden;
+    }
+
+    body {
+        touch-action: pan-y;
+    }
+}
