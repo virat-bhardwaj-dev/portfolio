@@ -3,6 +3,7 @@
    FINAL CSS
 ========================================================= */
 
+
 /* =========================================================
    ROOT
 ========================================================= */
@@ -36,6 +37,7 @@
 
     --transition: 0.35s cubic-bezier(.2, .8, .2, 1);
 }
+
 
 /* =========================================================
    RESET
@@ -108,6 +110,7 @@ img {
 ul {
     list-style: none;
 }
+
 
 /* =========================================================
    BACKGROUND
@@ -217,6 +220,7 @@ ul {
     }
 }
 
+
 /* =========================================================
    COMMON
 ========================================================= */
@@ -305,6 +309,7 @@ ul {
     font-size: 15px;
 }
 
+
 /* =========================================================
    REVEAL
    IMPORTANT: visible by default
@@ -327,6 +332,7 @@ ul {
 
     transform: translateY(0);
 }
+
 
 /* =========================================================
    HEADER
@@ -393,6 +399,7 @@ ul {
     transform: translateY(-2px);
 }
 
+
 /* =========================================================
    NAVIGATION
 ========================================================= */
@@ -441,7 +448,7 @@ ul {
 
     box-shadow:
         0 0 12px var(--primary);
-
+    
     transition: var(--transition);
 }
 
@@ -455,6 +462,7 @@ ul {
         translateX(-50%)
         scale(1);
 }
+
 
 /* =========================================================
    NAV RIGHT
@@ -517,6 +525,7 @@ ul {
 
     transition: var(--transition);
 }
+
 
 /* =========================================================
    HERO
@@ -677,6 +686,7 @@ ul {
     line-height: 1.8;
 }
 
+
 /* =========================================================
    BUTTONS
 ========================================================= */
@@ -758,6 +768,7 @@ ul {
     transform: translateX(4px);
 }
 
+
 /* =========================================================
    HERO STATS
 ========================================================= */
@@ -802,6 +813,7 @@ ul {
 
     background: var(--border);
 }
+
 
 /* =========================================================
    HERO PROFILE
@@ -922,6 +934,7 @@ ul {
     transform: scale(1.025);
 }
 
+
 /* =========================================================
    ORBITS
 ========================================================= */
@@ -965,6 +978,7 @@ ul {
         transform: rotate(-360deg);
     }
 }
+
 
 /* =========================================================
    FLOATING CARDS
@@ -1055,6 +1069,7 @@ ul {
     }
 }
 
+
 /* =========================================================
    SCROLL INDICATOR
 ========================================================= */
@@ -1122,6 +1137,7 @@ ul {
         opacity: 0;
     }
 }
+
 
 /* =========================================================
    ABOUT
@@ -1206,6 +1222,7 @@ ul {
 
     font-size: 13px;
 }
+
 
 /* =========================================================
    TERMINAL
@@ -1299,6 +1316,7 @@ ul {
         opacity: 0;
     }
 }
+
 
 /* =========================================================
    SKILLS
@@ -1449,6 +1467,7 @@ ul {
 
     border-color: rgba(139,92,246,.25);
 }
+
 
 /* =========================================================
    PROJECTS
@@ -1687,6 +1706,7 @@ ul {
     transform: translateY(-3px);
 }
 
+
 /* =========================================================
    CERTIFICATES
 ========================================================= */
@@ -1839,6 +1859,7 @@ ul {
     font-size: 9px;
 }
 
+
 /* =========================================================
    CERTIFICATE MODAL
 ========================================================= */
@@ -1966,6 +1987,7 @@ ul {
     border-radius: 8px;
 }
 
+
 /* =========================================================
    EDUCATION
 ========================================================= */
@@ -2088,6 +2110,7 @@ ul {
     font-size: 13px;
 }
 
+
 /* =========================================================
    CONTACT
 ========================================================= */
@@ -2188,6 +2211,7 @@ ul {
 .social-link i {
     font-size: 14px;
 }
+
 
 /* =========================================================
    CONTACT CARDS
@@ -2292,6 +2316,7 @@ ul {
     transform: translate(3px, -3px);
 }
 
+
 /* =========================================================
    FOOTER
 ========================================================= */
@@ -2336,6 +2361,7 @@ ul {
 .footer-copy {
     text-align: right;
 }
+
 
 /* =========================================================
    BACK TO TOP
@@ -2393,6 +2419,7 @@ ul {
     transform: translateY(-4px);
 }
 
+
 /* =========================================================
    LIGHT MODE
 ========================================================= */
@@ -2438,6 +2465,7 @@ body.light-mode .terminal-card {
     color: #cbd5e1;
 }
 
+
 /* =========================================================
    TABLET
 ========================================================= */
@@ -2482,6 +2510,7 @@ body.light-mode .terminal-card {
             repeat(2, 1fr);
     }
 }
+
 
 /* =========================================================
    MOBILE NAV + LAYOUT
@@ -2593,6 +2622,7 @@ body.light-mode .terminal-card {
             rotate(-45deg);
     }
 
+
     /* HERO */
 
     .hero {
@@ -2673,6 +2703,7 @@ body.light-mode .terminal-card {
         bottom: 14%;
     }
 
+
     /* ABOUT */
 
     .section-heading {
@@ -2706,6 +2737,7 @@ body.light-mode .terminal-card {
         font-size: 19px;
     }
 
+
     /* SKILLS */
 
     .skills-grid {
@@ -2721,6 +2753,7 @@ body.light-mode .terminal-card {
         padding: 19px;
     }
 
+
     /* PROJECTS */
 
     .projects-grid {
@@ -2734,6 +2767,7 @@ body.light-mode .terminal-card {
 
         padding: 22px;
     }
+
 
     /* CERTIFICATES */
 
@@ -2754,6 +2788,7 @@ body.light-mode .terminal-card {
         font-size: 12px;
     }
 
+
     /* CONTACT */
 
     .contact-grid {
@@ -2765,6 +2800,7 @@ body.light-mode .terminal-card {
     .contact-big-text {
         font-size: 2.5rem;
     }
+
 
     /* FOOTER */
 
@@ -2778,6 +2814,7 @@ body.light-mode .terminal-card {
         text-align: center;
     }
 }
+
 
 /* =========================================================
    SMALL MOBILE
@@ -2896,11 +2933,13 @@ body.light-mode .terminal-card {
         right: 0;
     }
 
+
     /* ABOUT */
 
     .about-info {
         grid-template-columns: 1fr;
     }
+
 
     /* SKILLS */
 
@@ -2912,6 +2951,7 @@ body.light-mode .terminal-card {
         min-height: auto;
     }
 
+
     /* CERTIFICATES */
 
     .certificates-grid {
@@ -2921,6 +2961,7 @@ body.light-mode .terminal-card {
     .certificate-preview {
         aspect-ratio: 16 / 10;
     }
+
 
     /* EDUCATION */
 
@@ -2939,6 +2980,7 @@ body.light-mode .terminal-card {
     .timeline-card h3 {
         font-size: 16px;
     }
+
 
     /* CONTACT */
 
@@ -2960,6 +3002,7 @@ body.light-mode .terminal-card {
         font-size: 11px;
     }
 
+
     /* MODAL */
 
     .certificate-modal {
@@ -2980,6 +3023,7 @@ body.light-mode .terminal-card {
         height: 37px;
     }
 
+
     /* BACK TO TOP */
 
     .back-to-top {
@@ -2990,6 +3034,7 @@ body.light-mode .terminal-card {
         height: 39px;
     }
 }
+
 
 /* =========================================================
    VERY SMALL DEVICES
@@ -3032,6 +3077,7 @@ body.light-mode .terminal-card {
     }
 }
 
+
 /* =========================================================
    ACCESSIBILITY
 ========================================================= */
@@ -3042,6 +3088,7 @@ button:focus-visible {
 
     outline-offset: 4px;
 }
+
 
 /* =========================================================
    REDUCED MOTION
@@ -3103,11 +3150,13 @@ button:focus-visible {
     display: block;
 }
 
+
 /* Keep profile decorations behind the image */
 .profile-section,
 .profile-wrapper {
     overflow: visible;
 }
+
 
 /* =========================================
    MOBILE PROFILE
@@ -3226,6 +3275,7 @@ button:focus-visible {
     color: #ffffff;
     font-style: italic;
 }
+
 
 /* =====================================================
    FINAL CONTACT CTA
@@ -3494,6 +3544,7 @@ button:focus-visible {
     color: #e8ebf2;
 }
 
+
 /* =====================================================
    MOBILE
 ===================================================== */
@@ -3560,21 +3611,378 @@ button:focus-visible {
         min-width: 120px;
     }
 }
-
 /* =========================================================
-   MOBILE VIEWPORT STABILITY
-   Layout/design intentionally unchanged.
+   FINAL UI POLISH + SAFE FIXES
+   Added without changing the existing core layout/design.
 ========================================================= */
-@media (max-width: 768px) {
-    html,
-    body {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        overflow-x: hidden;
+
+/* ---------- Typing animation ---------- */
+.typing-text {
+    display: inline-flex;
+    align-items: baseline;
+    min-width: 0;
+}
+
+#typing-text {
+    display: inline-block;
+    min-height: 1.4em;
+}
+
+.typing-cursor {
+    display: inline-block;
+    margin-left: 2px;
+    color: var(--primary-light);
+    font-weight: 700;
+    animation: typingCursorBlink .8s steps(1, end) infinite;
+}
+
+@keyframes typingCursorBlink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+/* ---------- Scroll reveal ---------- */
+.reveal {
+    will-change: transform, opacity;
+}
+
+/* JS can add .is-visible. Keep the original safe-visible default. */
+.reveal:not(.is-visible) {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(28px);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.hero-content.reveal,
+.hero-profile.reveal {
+    transition-duration: .9s;
+}
+
+.skill-card.reveal:nth-child(2),
+.project-card.reveal:nth-child(2),
+.certificate-card.reveal:nth-child(2) {
+    transition-delay: .08s;
+}
+
+.skill-card.reveal:nth-child(3),
+.project-card.reveal:nth-child(3),
+.certificate-card.reveal:nth-child(3) {
+    transition-delay: .16s;
+}
+
+.skill-card.reveal:nth-child(4),
+.project-card.reveal:nth-child(4),
+.certificate-card.reveal:nth-child(4) {
+    transition-delay: .24s;
+}
+
+/* ---------- Button polish ---------- */
+.btn {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,.14), transparent 70%);
+    transform: translateX(-120%);
+    transition: transform .65s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    transform: translateX(120%);
+}
+
+.download-cv {
+    white-space: nowrap;
+}
+
+.download-cv i {
+    transition: transform .3s ease;
+}
+
+.download-cv:hover i {
+    transform: translateY(2px);
+}
+
+/* ---------- Safer card interactions ---------- */
+.skill-card,
+.project-card,
+.certificate-card,
+.timeline-card,
+.contact-card,
+.info-item,
+.terminal-card,
+.contact-cta {
+    will-change: transform;
+}
+
+/* ---------- Light mode readability fixes ---------- */
+body.light-mode .hero-badge {
+    color: #166534;
+    border-color: rgba(22,101,52,.18);
+    background: rgba(34,197,94,.08);
+}
+
+body.light-mode .nav-container {
+    border-color: rgba(15,23,42,.12);
+    box-shadow: 0 15px 45px rgba(15,23,42,.12);
+}
+
+body.light-mode .nav-link:hover,
+body.light-mode .nav-link.active {
+    color: var(--text);
+}
+
+body.light-mode .section-number,
+body.light-mode .info-item,
+body.light-mode .social-link,
+body.light-mode .skill-card,
+body.light-mode .project-card,
+body.light-mode .certificate-card,
+body.light-mode .timeline-card,
+body.light-mode .contact-card {
+    border-color: rgba(15,23,42,.11);
+}
+
+body.light-mode .skill-card,
+body.light-mode .project-card,
+body.light-mode .timeline-card,
+body.light-mode .contact-card,
+body.light-mode .certificate-card {
+    box-shadow: 0 18px 45px rgba(15,23,42,.07);
+}
+
+body.light-mode .skill-card h3,
+body.light-mode .project-content h3,
+body.light-mode .timeline-card h3,
+body.light-mode .certificate-info h3,
+body.light-mode .contact-card strong,
+body.light-mode .info-item strong,
+body.light-mode .hero-stat strong,
+body.light-mode .contact-big-text {
+    color: #0f172a;
+}
+
+body.light-mode .skill-card p,
+body.light-mode .project-content > p:not(.project-category),
+body.light-mode .timeline-card > p:last-child,
+body.light-mode .contact-intro > p:not(.contact-big-text),
+body.light-mode .contact-card span,
+body.light-mode .contact-arrow,
+body.light-mode .social-link,
+body.light-mode .hero-description,
+body.light-mode .hero-intro,
+body.light-mode .hero-stat span,
+body.light-mode .info-item span {
+    color: #64748b;
+}
+
+body.light-mode .skill-tags span,
+body.light-mode .project-tech span {
+    color: #475569;
+    background: rgba(15,23,42,.025);
+    border-color: rgba(15,23,42,.1);
+}
+
+body.light-mode .skill-tags span:hover,
+body.light-mode .project-tech span:hover {
+    color: #6d28d9;
+    border-color: rgba(109,40,217,.3);
+    background: rgba(109,40,217,.05);
+}
+
+body.light-mode .education-list {
+    border-top-color: rgba(15,23,42,.12);
+}
+
+body.light-mode .education-item {
+    border-bottom-color: rgba(15,23,42,.1);
+}
+
+body.light-mode .education-item:hover {
+    border-bottom-color: rgba(109,40,217,.35);
+}
+
+body.light-mode .education-content h3,
+body.light-mode .education-degree strong,
+body.light-mode .education-meta span:last-child {
+    color: #0f172a;
+}
+
+body.light-mode .education-degree,
+body.light-mode .education-meta {
+    color: #64748b;
+}
+
+body.light-mode .contact-cta {
+    border-color: rgba(109,40,217,.18);
+    background: linear-gradient(145deg, rgba(255,255,255,.92), rgba(245,247,252,.88));
+    box-shadow: 0 25px 70px rgba(15,23,42,.1);
+}
+
+body.light-mode .contact-cta:hover {
+    border-color: rgba(109,40,217,.45);
+}
+
+body.light-mode .contact-cta h3 {
+    color: #0f172a;
+}
+
+body.light-mode .cta-description {
+    color: #64748b;
+}
+
+body.light-mode .cta-contact {
+    border-top-color: rgba(15,23,42,.1);
+}
+
+body.light-mode .cta-contact span {
+    color: #64748b;
+}
+
+body.light-mode .cta-contact strong {
+    color: #334155;
+}
+
+body.light-mode .footer {
+    background: rgba(255,255,255,.55);
+    border-top-color: rgba(15,23,42,.1);
+}
+
+body.light-mode .footer p {
+    color: #64748b;
+}
+
+body.light-mode .back-to-top {
+    color: #334155;
+    background: rgba(255,255,255,.85);
+    border-color: rgba(15,23,42,.12);
+    box-shadow: 0 10px 30px rgba(15,23,42,.12);
+}
+
+body.light-mode .back-to-top:hover {
+    color: #0f172a;
+    background: rgba(139,92,246,.08);
+}
+
+/* ---------- Mobile stability ---------- */
+html,
+body {
+    max-width: 100%;
+}
+
+body {
+    overflow-x: clip;
+}
+
+.section,
+.section-container,
+.hero-container,
+.about-grid,
+.contact-grid,
+.projects-grid,
+.skills-grid,
+.certificates-grid {
+    min-width: 0;
+}
+
+@media (max-width: 780px) {
+    .nav-container {
+        position: relative;
     }
 
-    body {
-        touch-action: pan-y;
+    .nav-links {
+        max-width: 100%;
+    }
+
+    .hero-container,
+    .about-grid,
+    .contact-grid {
+        width: 100%;
+    }
+
+    .hero-title,
+    .hero-description,
+    .project-content,
+    .skill-card,
+    .timeline-card,
+    .contact-cta {
+        overflow-wrap: anywhere;
+    }
+
+    .hero-buttons {
+        width: 100%;
+    }
+
+    .btn {
+        min-width: 0;
+    }
+
+    .floating-card {
+        max-width: 42%;
+    }
+
+    .profile-orbit.orbit-two {
+        max-width: calc(100vw - 30px);
+        max-height: calc(100vw - 30px);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-buttons .btn {
+        flex: 1 1 140px;
+    }
+
+    .floating-card {
+        max-width: 44%;
+    }
+}
+
+/* ---------- Better touch behaviour ---------- */
+@media (hover: none) and (pointer: coarse) {
+    .skill-card:hover,
+    .project-card:hover,
+    .certificate-card:hover,
+    .terminal-card:hover,
+    .timeline-card:hover,
+    .contact-card:hover,
+    .contact-cta:hover,
+    .info-item:hover {
+        transform: none;
+    }
+
+    .btn:hover,
+    .social-link:hover,
+    .project-link:hover,
+    .project-github:hover {
+        transform: none;
+    }
+}
+
+/* ---------- Accessibility ---------- */
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal:not(.is-visible),
+    .reveal.is-visible {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .typing-cursor {
+        animation: none !important;
     }
 }

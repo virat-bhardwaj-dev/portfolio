@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('a[href^="#"]').forEach(link => {
 
         link.addEventListener("click", function (e) {
-
             const targetId = this.getAttribute("href");
 
             if (!targetId || targetId === "#") return;
@@ -52,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             }
         });
+
     });
 
 
@@ -63,11 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const navItems = document.querySelectorAll(".nav-link");
 
     function updateActiveNav() {
-
         let current = "home";
 
         sections.forEach(section => {
-
             const sectionTop =
                 section.getBoundingClientRect().top +
                 window.scrollY;
@@ -78,7 +76,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         navItems.forEach(link => {
-
             link.classList.remove("active");
 
             if (link.getAttribute("href") === `#${current}`) {
@@ -93,40 +90,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* =====================================================
        REVEAL ANIMATIONS
-       
-       IMPORTANT:
-       This directly makes elements visible after entering
-       viewport, so blank Hero problem doesn't happen.
     ===================================================== */
 
-    const revealElements =
-        document.querySelectorAll(".reveal");
+    const revealElements = document.querySelectorAll(".reveal");
 
     if ("IntersectionObserver" in window) {
 
-        const revealObserver =
-            new IntersectionObserver(
-                (entries, observer) => {
+        const revealObserver = new IntersectionObserver(
+            (entries, observer) => {
 
-                    entries.forEach(entry => {
+                entries.forEach(entry => {
 
-                        if (entry.isIntersecting) {
+                    if (entry.isIntersecting) {
 
-                            entry.target.classList.add(
-                                "is-visible"
-                            );
+                        entry.target.classList.add("is-visible");
 
-                            observer.unobserve(
-                                entry.target
-                            );
-                        }
-                    });
+                        observer.unobserve(entry.target);
+                    }
 
-                },
-                {
-                    threshold: 0.08
-                }
-            );
+                });
+
+            },
+            {
+                threshold: 0.08
+            }
+        );
 
         revealElements.forEach(element => {
             revealObserver.observe(element);
@@ -137,6 +125,92 @@ document.addEventListener("DOMContentLoaded", () => {
         revealElements.forEach(element => {
             element.classList.add("is-visible");
         });
+
+    }
+
+
+    /* =====================================================
+       TYPING ANIMATION
+    ===================================================== */
+
+    const typingText = document.getElementById("typing-text");
+
+    if (typingText) {
+
+        const roles = [
+            "CSE Student",
+            "Aspiring Full Stack Developer",
+            "Problem Solver",
+            "Collaborative Teammate"
+        ];
+
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        const typingSpeed = 90;
+        const deletingSpeed = 55;
+        const pauseAfterTyping = 1500;
+        const pauseAfterDeleting = 500;
+
+        function typeRole() {
+
+            const currentRole = roles[roleIndex];
+
+            if (!isDeleting) {
+
+                typingText.textContent =
+                    currentRole.substring(0, charIndex + 1);
+
+                charIndex++;
+
+                if (charIndex === currentRole.length) {
+
+                    isDeleting = true;
+
+                    setTimeout(
+                        typeRole,
+                        pauseAfterTyping
+                    );
+
+                    return;
+                }
+
+                setTimeout(
+                    typeRole,
+                    typingSpeed
+                );
+
+            } else {
+
+                typingText.textContent =
+                    currentRole.substring(0, charIndex - 1);
+
+                charIndex--;
+
+                if (charIndex === 0) {
+
+                    isDeleting = false;
+
+                    roleIndex =
+                        (roleIndex + 1) % roles.length;
+
+                    setTimeout(
+                        typeRole,
+                        pauseAfterDeleting
+                    );
+
+                    return;
+                }
+
+                setTimeout(
+                    typeRole,
+                    deletingSpeed
+                );
+            }
+        }
+
+        typeRole();
     }
 
 
@@ -160,11 +234,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".certificate-modal-backdrop");
 
 
-    /*
-       IMPORTANT:
-       These paths match your certificate folder.
-    */
-
     const certificateFiles = {
 
         "certificate-1":
@@ -174,13 +243,14 @@ document.addEventListener("DOMContentLoaded", () => {
             "certificates/IntroductiontoArtificialIntelligence.png",
 
         "certificate-3":
-            "certificates/CS205BuildingWithArtificialIntelligence.jpeg.jpeg",
+            "certificates/CS205BuildingWithArtificialIntelligence.jpeg",
 
         "certificate-4":
             "certificates/ChatGPTforDataAnalytics.png",
 
         "certificate-5":
             "certificates/BasicOfPython.jpeg"
+
     };
 
 
@@ -193,10 +263,12 @@ document.addEventListener("DOMContentLoaded", () => {
             certificateFiles[certificateId];
 
         if (!imagePath) {
+
             console.error(
                 "Certificate path not found:",
                 certificateId
             );
+
             return;
         }
 
@@ -259,22 +331,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     if (certificateClose) {
+
         certificateClose.addEventListener(
             "click",
             closeCertificate
         );
+
     }
 
 
     if (certificateBackdrop) {
+
         certificateBackdrop.addEventListener(
             "click",
             closeCertificate
         );
+
     }
 
-
-    /* ESC closes certificate */
 
     document.addEventListener("keydown", e => {
 
@@ -287,9 +361,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* =====================================================
        PROJECT LINKS
-       
-       HTML already has real links, so don't interfere
-       with normal browser behaviour.
     ===================================================== */
 
     document.querySelectorAll(
@@ -362,9 +433,11 @@ document.addEventListener("DOMContentLoaded", () => {
             );
 
         if (savedTheme === "light") {
+
             document.body.classList.add(
                 "light-mode"
             );
+
         }
 
         themeBtn.addEventListener(
@@ -386,8 +459,10 @@ document.addEventListener("DOMContentLoaded", () => {
                         ? "light"
                         : "dark"
                 );
+
             }
         );
+
     }
 
 
@@ -415,9 +490,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     backToTop.classList.remove(
                         "show"
                     );
+
                 }
+
             }
         );
+
 
         backToTop.addEventListener(
             "click",
@@ -430,6 +508,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             }
         );
+
     }
 
 
@@ -441,8 +520,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("current-year");
 
     if (currentYear) {
+
         currentYear.textContent =
             new Date().getFullYear();
+
     }
 
 
@@ -476,8 +557,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     "--mouse-y",
                     `${y}px`
                 );
+
             }
         );
+
 
         card.addEventListener(
             "mouseleave",
@@ -490,8 +573,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 card.style.removeProperty(
                     "--mouse-y"
                 );
+
             }
         );
+
     });
 
 
